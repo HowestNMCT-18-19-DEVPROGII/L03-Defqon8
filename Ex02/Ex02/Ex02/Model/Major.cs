@@ -82,10 +82,11 @@ namespace Ex02.Model
                 catch (Exception ex)
                 {
                     Debug.WriteLine("Error on line: " + sLine);
+                    throw; 
                 }
 
 
-                //mijn inlezen
+                //lijn inlezen
                 sLine = oSR.ReadLine();
             }
 
@@ -102,12 +103,14 @@ namespace Ex02.Model
             major.Women = int.Parse(parts[2]);
             major.Major_category = parts[3];
             major.Employed = int.Parse(parts[4]);
-            major.Unemployed = int.Parse(parts[4]);
+            major.Unemployed = int.Parse(parts[5]);
             return major;
         }
 
-        public void GetByCategory()
+        public void GetByCategory(string sLine)
         {
+            
+        
 
         }
 
