@@ -9,7 +9,7 @@
             <RowDefinition Height="Auto" />
             <RowDefinition />
         </Grid.RowDefinitions>
-        <Picker IsVisible="True" BackgroundColor="Silver" x:Name="GetByCategory" Title="Choose a category" TextColor="White" Grid.Row="0"  />
+        <Picker IsVisible="True" BackgroundColor="Silver" x:Name="pickCategories" Title="Choose a category" TextColor="White" Grid.Row="0"/>
 
         <!--list of majors-->
         <ListView x:Name="lvwMajors" SeparatorColor="CornflowerBlue" Grid.Row="1" ItemSelected="lvwMajors_ItemSelected">

@@ -9,6 +9,7 @@ namespace Ex02.Model
 {
     public class Major
     {
+        private static object pickCategories;
 
         //1. Properties maken, bv geslacht, naam etc
         public string Name { get; set; }
@@ -33,7 +34,7 @@ namespace Ex02.Model
         public double UnemploymentRate {
             get
             {
-                return (double) this.Unemployed / (this.Employed + this.Unemployed);
+                return (double)this.Unemployed / (this.Employed + this.Unemployed);
 
             }
         }
@@ -90,8 +91,6 @@ namespace Ex02.Model
                 //lijn inlezen
                 sLine = oSR.ReadLine();
             }
-
-
             return res;
         }
 
@@ -110,22 +109,27 @@ namespace Ex02.Model
             return major;
         }
 
-        public static List<Major> GetByCategory(List<Major>allmajors, string category)
+        public static List<Major> GetByCategory(List<Major> allmajors, string category)
         {
             List<Major> filteredMajors = new List<Major>();
-       
-            foreach(Major major in allmajors) //bekijk elke major 
+
+            foreach (Major major in allmajors) //bekijk elke major 
             {
                 if (major.Major_category.ToLower() == category.ToLower()) //als category gelijk is aan de category
                 {
                     filteredMajors.Add(major);
                 }
+            }
+            return filteredMajors;
+        }
 
+        public static list<string> GetUniqueCategories() {
+            List<string> result = new List<string>();
+            foreach(var category in result)
+            {
+                pickCategories.Add(category);
             }
 
-            
-
-            return filteredMajors;
         }
     }
 }

@@ -36,5 +36,10 @@ namespace Ex02
                 Navigation.PushAsync(new DetailPage(major));
             }
         }
+
+        private void pickCat()
+        {
+            pickCategories.ItemsSource = Major.GetByCategory;
+        }
     }
 }
