@@ -99,9 +99,7 @@ C:\HowestSRC\L03\Ex01\Ex01\Ex01.Android\obj\Debug\MonoAndroid81\android\assets\S
 C:\HowestSRC\L03\Ex01\Ex01\Ex01.Android\obj\Debug\MonoAndroid81\android\assets\System.Xml.pdb
 C:\HowestSRC\L03\Ex01\Ex01\Ex01.Android\obj\Debug\MonoAndroid81\android\assets\Xamarin.Forms.Core.pdb
 C:\HowestSRC\L03\Ex01\Ex01\Ex01.Android\obj\Debug\MonoAndroid81\android\assets\Xamarin.Forms.Xaml.pdb
-C:\HowestSRC\L03\Ex01\Ex01\Ex01\bin\Debug\netstandard2.0\Ex01.dll
 C:\HowestSRC\L03\Ex01\Ex01\Ex01.Android\obj\Debug\MonoAndroid81\linksrc\Ex01.Android.pdb
-C:\HowestSRC\L03\Ex01\Ex01\Ex01.Android\bin\Debug\Ex01.dll.mdb
 C:\HowestSRC\L03\Ex01\Ex01\Ex01.Android\obj\Debug\MonoAndroid81\linksrc\Ex01.dll.mdb
 C:\HowestSRC\L03\Ex01\Ex01\Ex01.Android\obj\Debug\MonoAndroid81\linksrc\FormsViewGroup.dll.mdb
 C:\HowestSRC\L03\Ex01\Ex01\Ex01.Android\obj\Debug\MonoAndroid81\linksrc\Xamarin.Forms.Platform.Android.dll.mdb

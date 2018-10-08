@@ -18,7 +18,7 @@
             <Label Text="Guests" FontSize="Large" TextColor="LightGray" />
 
             <!--ListView showing the list of Daily Show guests-->
-            <ListView x:Name="lvwGuests" SeparatorColor="White">
+            <ListView x:Name="lvwGuests" SeparatorColor="White" ItemSelected="lvwGuests_ItemSelected">
                 <ListView.ItemTemplate>
                     <DataTemplate>
                         <TextCell Text="{Binding Name}" 

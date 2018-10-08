@@ -1,0 +1,60 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Ex01.View.DetailPage">
+    <ContentPage.Content>
+        <StackLayout BackgroundColor="#959ca6" Orientation="Vertical">
+            <!--the 'resources' part contains styles for the controls inside the stacklayout-->
+            <!--you can COLLAPSE it for better readability of the rest using the '-' sign on the left-->
+            <StackLayout.Resources>
+                <ResourceDictionary>
+                    <Style TargetType="{x:Type Grid}">
+                        <Setter Property="HeightRequest" Value="50" />
+                    </Style>
+                    <Style TargetType="{x:Type Label}" x:Key="TitleLabelStyle">
+                        <Setter Property="TextColor" Value="#A9BFDD" />
+                        <Setter Property="FontAttributes" Value="Bold" />
+                        <Setter Property="VerticalOptions" Value="Center" />
+                        <Setter Property="Margin" Value="16,0,0,0" />
+                    </Style>
+                    <Style TargetType="{x:Type Label}" x:Key="DetailLabelStyle">
+                        <Setter Property="TextColor" Value="White" />
+                        <Setter Property="FontAttributes" Value="Bold" />
+                        <Setter Property="VerticalOptions" Value="Center" />
+                        <Setter Property="HorizontalOptions" Value="End" />
+                        <Setter Property="Margin" Value="0,0,16,0" />
+                    </Style>
+                </ResourceDictionary>
+            </StackLayout.Resources>
+            <!--Grid for the name (style/layout is defined in resources above)-->
+            <Grid>
+                <Label Text="Name" Style="{StaticResource TitleLabelStyle}" />
+                <Label x:Name="lblName" Style="{StaticResource DetailLabelStyle}" />
+            </Grid>
+            <BoxView Color="White" HeightRequest="1" />
+            <!--separator line-->
+
+            <!--Grid for the occupation (style/layout is defined in resources above)-->
+            <Grid>
+                <Label Text="Occupation" Style="{StaticResource TitleLabelStyle}" />
+                <Label x:Name="lblOccupation" Style="{StaticResource DetailLabelStyle}" />
+            </Grid>
+            <BoxView Color="White" HeightRequest="1" />
+            <!--separator line-->
+
+            <Grid>
+                <Label Text="Group" Style="{StaticResource TitleLabelStyle}" />
+                <Label x:Name="lblGroup" Style="{StaticResource DetailLabelStyle}" />
+            </Grid>
+            <BoxView Color="White" HeightRequest="1" />
+            <!--separator line-->
+
+            <Grid>
+                <Label Text="Show date" Style="{StaticResource TitleLabelStyle}" />
+                <Label x:Name="lblShowDate" Style="{StaticResource DetailLabelStyle}" />
+            </Grid>
+            <BoxView Color="White" HeightRequest="1" />
+            <!--separator line-->
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

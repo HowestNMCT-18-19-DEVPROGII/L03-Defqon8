@@ -10,3 +10,4 @@ C:\HowestSRC\L03\Ex01\Ex01\Ex01\obj\Debug\netstandard2.0\Ex01.AssemblyInfo.cs
 C:\HowestSRC\L03\Ex01\Ex01\Ex01\obj\Debug\netstandard2.0\XamlC.stamp
 C:\HowestSRC\L03\Ex01\Ex01\Ex01\obj\Debug\netstandard2.0\Ex01.dll
 C:\HowestSRC\L03\Ex01\Ex01\Ex01\obj\Debug\netstandard2.0\Ex01.pdb
+C:\HowestSRC\L03\Ex01\Ex01\Ex01\obj\Debug\netstandard2.0\View\DetailPage.xaml.g.cs
