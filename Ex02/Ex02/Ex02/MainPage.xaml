@@ -13,7 +13,15 @@
 
         <!--list of majors-->
         <ListView x:Name="lvwMajors" SeparatorColor="CornflowerBlue" Grid.Row="1">
+            <ListView.ItemTemplate>
+                <DataTemplate>
+                    <TextCell Text="{Binding Name}" 
+                                  Detail="{Binding NumberOfStudents}" 
+                                  DetailColor="#A9BFDD" TextColor="White" />
+                </DataTemplate>
+            </ListView.ItemTemplate>
         </ListView>
+        
 
     </Grid>
 
