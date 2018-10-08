@@ -1,0 +1,33 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:local="clr-namespace:Ex01"
+             x:Class="Ex01.MainPage">
+    
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto" />
+            <RowDefinition />
+        </Grid.RowDefinitions>
+        <Image Grid.RowSpan="2" Source="http://www.comedycentral.com.au/sites/default/files/styles/image-w-1200-h-600-scale-crop/public/cc_au/arc/2015/10/26/d715fcde-0ff3-4233-a476-23b90094fd13.jpg?itok=hNIhSS2J"
+            Aspect="AspectFill" />
+
+        <Image Source="https://sc-schemes.s3.amazonaws.com/12951/header_image.png" 
+            Margin="0,0,80,0" VerticalOptions="Start" />
+        <StackLayout Grid.Row="1" Margin="49,0">
+            <Label Text="Guests" FontSize="Large" TextColor="LightGray" />
+
+            <!--ListView showing the list of Daily Show guests-->
+            <ListView x:Name="lvwGuests" SeparatorColor="White">
+                <ListView.ItemTemplate>
+                    <DataTemplate>
+                        <TextCell Text="{Binding Name}" 
+                                  Detail="{Binding GoogleKnowlege_Occupation}" 
+                                  DetailColor="#A9BFDD" TextColor="White" />
+                    </DataTemplate>
+                </ListView.ItemTemplate>
+            </ListView>
+        </StackLayout>
+    </Grid>
+
+</ContentPage>

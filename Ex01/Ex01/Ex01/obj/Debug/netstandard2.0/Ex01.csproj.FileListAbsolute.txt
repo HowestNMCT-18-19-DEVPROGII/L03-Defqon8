@@ -1,0 +1,12 @@
+C:\HowestSRC\L03\Ex01\Ex01\Ex01\bin\Debug\netstandard2.0\Ex01.deps.json
+C:\HowestSRC\L03\Ex01\Ex01\Ex01\bin\Debug\netstandard2.0\Ex01.dll
+C:\HowestSRC\L03\Ex01\Ex01\Ex01\bin\Debug\netstandard2.0\Ex01.pdb
+C:\HowestSRC\L03\Ex01\Ex01\Ex01\obj\Debug\netstandard2.0\Ex01.csprojAssemblyReference.cache
+C:\HowestSRC\L03\Ex01\Ex01\Ex01\obj\Debug\netstandard2.0\App.xaml.g.cs
+C:\HowestSRC\L03\Ex01\Ex01\Ex01\obj\Debug\netstandard2.0\MainPage.xaml.g.cs
+C:\HowestSRC\L03\Ex01\Ex01\Ex01\obj\Debug\netstandard2.0\Ex01.csproj.CoreCompileInputs.cache
+C:\HowestSRC\L03\Ex01\Ex01\Ex01\obj\Debug\netstandard2.0\Ex01.AssemblyInfoInputs.cache
+C:\HowestSRC\L03\Ex01\Ex01\Ex01\obj\Debug\netstandard2.0\Ex01.AssemblyInfo.cs
+C:\HowestSRC\L03\Ex01\Ex01\Ex01\obj\Debug\netstandard2.0\XamlC.stamp
+C:\HowestSRC\L03\Ex01\Ex01\Ex01\obj\Debug\netstandard2.0\Ex01.dll
+C:\HowestSRC\L03\Ex01\Ex01\Ex01\obj\Debug\netstandard2.0\Ex01.pdb
