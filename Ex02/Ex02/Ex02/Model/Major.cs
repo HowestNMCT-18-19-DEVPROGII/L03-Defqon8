@@ -82,7 +82,8 @@ namespace Ex02.Model
                 catch (Exception ex)
                 {
                     Debug.WriteLine("Error on line: " + sLine);
-                    throw; 
+
+
                 }
 
 
@@ -93,6 +94,8 @@ namespace Ex02.Model
 
             return res;
         }
+
+
         private static Major CreateMajor(String sLine)
         {
             Major major = new Major();
@@ -107,15 +110,22 @@ namespace Ex02.Model
             return major;
         }
 
-        public void GetByCategory(string sLine)
+        public static List<Major> GetByCategory(List<Major>allmajors, string category)
         {
+            List<Major> filteredMajors = new List<Major>();
+       
+            foreach(Major major in allmajors) //bekijk elke major 
+            {
+                if (major.Major_category.ToLower() == category.ToLower()) //als category gelijk is aan de category
+                {
+                    filteredMajors.Add(major);
+                }
+
+            }
+
             
-        
 
+            return filteredMajors;
         }
-
-
-
-
     }
 }
