@@ -40,7 +40,8 @@ namespace Ex02
 
         private void PickCat()
         {
-            List<string> categories = Major.GetUniqueCategories(List<Major>allmajors);
+            List<Major> allMajors = Major.ReadMajorList();
+            List<string> categories = Major.GetUniqueCategories(allMajors);
             pickCategories.ItemsSource = categories;
         }
 
