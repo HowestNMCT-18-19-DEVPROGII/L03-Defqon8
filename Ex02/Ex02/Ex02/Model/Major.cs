@@ -138,7 +138,7 @@ namespace Ex02.Model
             foreach (Major major in allMajors)
             {
                 //check if the name in lowercase contains the lowercase characters in searchterm 
-                if (major.Major_category.ToLower() == major.Major_category.ToLower())
+                if (major.Major_category.ToLower().Contains(major.Major_category.ToLower()))
                 {
                     //if not, add the category to the list of results
                     results.Add(major.Major_category);
