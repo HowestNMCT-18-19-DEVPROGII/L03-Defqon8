@@ -10,6 +10,7 @@ namespace Ex02.Model
     public class Major
     {
         private static object pickCategories;
+        private static object major;
 
         //1. Properties maken, bv geslacht, naam etc
         public string Name { get; set; }
@@ -47,6 +48,11 @@ namespace Ex02.Model
             }
         }
 
+        internal static List<string> GetUniqueCategories(bool v)
+        {
+            throw new NotImplementedException();
+        }
+
 
         //2. constructor (ctor) indien geen voorzien, word vor jouw de default ctor gemaakt
         //we gebruiken de default
@@ -76,7 +82,7 @@ namespace Ex02.Model
             {
                 //lijn verwerken vanuit private createguest
                 try
-                {
+                {   
                     Major major = CreateMajor(sLine);
                     res.Add(major); //toevoegen aan lijst
                 }
@@ -123,13 +129,25 @@ namespace Ex02.Model
             return filteredMajors;
         }
 
-        public static list<string> GetUniqueCategories() {
-            List<string> result = new List<string>();
-            foreach(var category in result)
-            {
-                pickCategories.Add(category);
-            }
+        public static List<string> GetUniqueCategories(List<Major> allMajors)
+        {
+            List<string> results = new List<string>();
 
+            //loop through each major in the majors list
+            foreach (Major major in allMajors)
+            {
+                //check if the name in lowercase contains the lowercase characters in searchterm 
+                if (major.Major_category.ToLower().Contains(major.Major_category.ToLower()))
+                {
+                    break;
+                }
+                else
+                {
+                    //if not, add the category to the list of results
+                    results.Add(major.Major_category);
+                }
+            }
+            return results;
         }
     }
 }

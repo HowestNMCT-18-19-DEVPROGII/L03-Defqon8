@@ -15,6 +15,7 @@ namespace Ex02
         {
             InitializeComponent();
             LoadMajor();
+            PickCat();
         }
         private void LoadMajor()
         {
@@ -37,9 +38,11 @@ namespace Ex02
             }
         }
 
-        private void pickCat()
+        private void PickCat()
         {
-            pickCategories.ItemsSource = Major.GetByCategory;
+            List<string> categories = Major.GetUniqueCategories(List<Major>allmajors);
+            pickCategories.ItemsSource = categories;
         }
+
     }
 }
