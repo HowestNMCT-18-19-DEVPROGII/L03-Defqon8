@@ -43,7 +43,17 @@ namespace Ex02
             List<Major> allMajors = Major.ReadMajorList();
             List<string> categories = Major.GetUniqueCategories(allMajors);
             pickCategories.ItemsSource = categories;
+            
         }
 
+        private void pickCategories_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            if (pickCategories.SelectedItem != null)
+            {
+                List<Major> allmajors = Major.ReadMajorList();
+                List<Major> filteredlist = Major.GetByCategory(allmajors, pickCategories.SelectedItem.ToString());
+                lvwMajors.ItemsSource = filteredlist;
+            }
+        }
     }
 }
